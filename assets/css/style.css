@@ -52,6 +52,13 @@ table .votes {
     padding-right: 0;
 }
 
+@media screen and (max-width: 980px) {
+    #search-form .form-group {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 #search-form .form-control {
     background-color: #f9f9f9;
     border-color: #e6e3e3;
