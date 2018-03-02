@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Searchit</title>
+</head>
+<body>
+
+  <header>
+    <div class="bg-dark">
+      <div class="row">
+        <div class="col-sm-8 col-md-4 py-4 container">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">This is a very simple and basic reddit search using reddit's API. This is just a fun-to-do project in my spare time. I hope you find it enjoyable, at least the first few seconds :)</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="page-container" class="container">
+    <h1 class="display-4">Searchit</h1>
+    <p class="h5">Make a simple reddit search</p>
+
+    <form id="search-form">
+      <div class="row">
+        <div class="first form-group col-md-4">
+          <label for="limit" class="mt-2">Limit: </label>
+          <select name="limit" class="form-control limit">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="time" class="mt-2">Time: </label>
+          <select name="time" class="form-control time">
+            <option value="hour">Hour</option>
+            <option value="day">Day</option>
+            <option value="week" selected>Week</option>
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+            <option value="all">All</option>
+          </select>
+        </div>
+        
+        <div class="last form-group col-md-4">
+          <label for="sortby" class="mt-2">Sort by: </label>
+          <select name="sortby" class="form-control sortby">
+            <option value="relevance" selected>Relevance</option>
+            <option value="hot">Hot</option>
+            <option value="top">Top</option>
+            <option value="new">New</option>
+            <option value="comments">Comments</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="query">Search term:</label>
+        <input name="query" type="text" class="query form-control mb-3" required="true" placeholder="Search term...">
+      </div>
+
+      <button type="submit" class="btn btn-info btn-block">Search</button>
+    </form>
+
+    <div id="entries">
+      <h2>Listing</h2>
+      <p class="records-count">Showing last <span>25</span> records</p>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Votes</th>
+                <th>NSFW</th>
+                <th>Subreddit</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>

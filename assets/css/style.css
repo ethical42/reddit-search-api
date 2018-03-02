@@ -1,0 +1,76 @@
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+table a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+table a:hover {
+    text-decoration: none;
+}
+
+.fas {
+    color: #bdbdbd;
+}
+
+table .votes {
+    min-width: 150px;
+}
+
+#page-container {
+    padding: 50px 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#search-form {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+#search-form .form-group.first {
+    padding-left: 0;
+}
+
+#search-form .form-group.last {
+    padding-right: 0;
+}
+
+#search-form .form-control {
+    background-color: #f9f9f9;
+    border-color: #e6e3e3;
+}
+
+#search-form .form-control.query {
+    text-transform: capitalize;
+}
+
+.bg-dark {
+    background-color: #333;
+}
+
+#page-container h1 + p {
+    margin-bottom: 40px;
+}
+
+.no-records {
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px;
+}
