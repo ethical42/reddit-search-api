@@ -18,7 +18,7 @@ function ajaxReq(query, limit, sortby, time) {
 
     for (var i = 0; i < res.data.children.length; i++) {
       var subreddit_data = res.data.children[i].data.subreddit;
-      var subreddit = '<td><a href="https://www.reddit.com/' + subreddit_data + '" target="_blank">' + subreddit_data + '</a></td>';
+      var subreddit = '<td><a href="https://www.reddit.com/r/' + subreddit_data + '" target="_blank">' + subreddit_data + '</a></td>';
 
       var upvotes = '<td class="votes"><i class="fas fa-arrow-up"></i> ' + res.data.children[i].data.ups;
       var downvotes = res.data.children[i].data.downs + ' <i class="fas fa-arrow-down"></i></td>';
